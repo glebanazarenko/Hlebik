@@ -54,10 +54,10 @@
                             <a class="nav-link" href="blogs.html">Блоги</a>
                         </li>--><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Контакт</a>
+                            <a class="nav-link" href="contact.php">Контакт</a>
                         </li><!--end nav-item-->
                     </ul><!--end navbar-nav-->
-                    <a href="contact.html" class="btn btn-sm nav-btn text-primary mb-4 mb-lg-0">Наймите меня! <i class="icon-xxs ms-1" data-feather="chevrons-right"></i></a>
+                    <a href="contact.php" class="btn btn-sm nav-btn text-primary mb-4 mb-lg-0">Наймите меня! <i class="icon-xxs ms-1" data-feather="chevrons-right"></i></a>
                 </div><!-- end #navbarNav -->
             </div><!-- end container -->
         </nav>
@@ -176,9 +176,9 @@
                     </div><!--end col--> 
                     <div class="col-lg-6 ml-auto">
                         <div class="cta-search">
-                            <form class="position-relative">
-                                <input type="email" placeholder="Адрес почты" required="">
-                                <button type="submit" class="btn btn-dark">Отправить сообщение</button>
+                            <form method="POST" class="position-relative" action="contact.php">
+                                <input type="email" name="email" placeholder="Адрес почты" required="">
+                                <button type="submit" class="btn btn-dark" >Отправить сообщение</button>
                             </form>
                         </div>
                     </div><!--end col--> 
@@ -244,7 +244,7 @@
                                 <h6 class="text-footer mb-4 mt-sm-0 mt-4">Больше информации</h6>
                                 <ul class="list-unstyled footer-list">
                                     <!--<li><a href="#blogs">Блоги</a></li>-->
-                                    <li><a href="contact.html">Контакт</a></li>
+                                    <li><a href="contact.php">Контакт</a></li>
                                     <li><a href="#">Правила и условия</a></li>
                                 </ul>
                             </div><!-- end col -->

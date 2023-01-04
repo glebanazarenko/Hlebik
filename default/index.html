@@ -54,10 +54,10 @@
                             <a class="nav-link" href="blogs.html">Блоги</a>
                         </li>--><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Контакт</a>
+                            <a class="nav-link" href="contact.php">Контакт</a>
                         </li><!--end nav-item-->
                     </ul><!--end navbar-nav-->
-                    <a href="contact.html" class="btn btn-sm nav-btn text-primary mb-4 mb-lg-0">Наймите меня! <i class="icon-xxs ms-1" data-feather="chevrons-right"></i></a>
+                    <a href="contact.php" class="btn btn-sm nav-btn text-primary mb-4 mb-lg-0">Наймите меня! <i class="icon-xxs ms-1" data-feather="chevrons-right"></i></a>
                 </div><!-- end #navbarNav -->
             </div><!-- end container -->
         </nav>
@@ -494,7 +494,7 @@
         </section>
         <!-- end what client says -->
         
-        <section class="section bg-light cta-pettern">
+        <!--<section class="section bg-light cta-pettern">
             <div class="container">            
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -503,18 +503,18 @@
                         </div>
                         <h2 class="text-dark" style="line-height: 1.5; position: relative;">Свободен Для Работы Онлайн</h2>
                         <p class="text-muted mb-0">Но так же возможна работа в офисе по договоренности</p>
-                    </div><!--end col--> 
-                    <div class="col-lg-6 ml-auto">
+                    </div>--><!--end col--> 
+                    <!--<div class="col-lg-6 ml-auto">
                         <div class="cta-search">
                             <form class="position-relative">
                                 <input type="email" placeholder="Адрес почты" required="">
                                 <button type="submit" class="btn btn-dark">Отправить сообщение</button>
                             </form>
                         </div>
-                    </div><!--end col--> 
-                </div><!--end row--> 
-            </div><!--end container--> 
-        </section>
+                    </div>--><!--end col--> 
+                <!--</div>--><!--end row--> 
+            <!--</div>--><!--end container--> 
+        <!--</section>-->
 
 
         <!-- start projects -->
@@ -737,32 +737,37 @@
                                         <h2 class="fs-2 fw-normal lh-1 text-dark mb-3">Выходите на связь!</h2>
                                         <p class="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 ">Всегда доступен для фриланса, если появится подходящий проект,<br>
                                             не стесняйтесь обращаться ко мне.</p>
-                                        <form method="post" name="myForm" onsubmit="return validateForm()">
+                                        <form method="post" name="myForm">
                                             <span id="error-msg"></span>
                                             <div class="row">
+
+                                                <!-- Hidden Required Fields -->
+		                                        <input type="hidden" name="project_name" value="HLEBIK">
+		                                        <!--<input type="hidden" name="admin_email" value="dea16367@cdfaq.com">-->
+
                                                 <div class="col-md-6 mb-3">
                                                     <label class="fw-medium form-label fs-16" for="name">Имя</label>
-                                                    <input type="text" class="form-control" placeholder="Ваше имя" id="name" />
+                                                    <input type="text" name="fio" class="form-control" placeholder="Ваше имя" id="name" />
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-md-6 mb-3">
-                                                    <label class="fw-medium form-label  fs-16" for="email">Почта</label>
-                                                    <input type="email" class="form-control" placeholder="Ваша почта" id="email" />
+                                                    <label class="fw-medium form-label  fs-16" for="email" >Почта</label>
+                                                    <input type="email" name="email" class="form-control" placeholder="Ваша почта" id="email" />
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-md-6 mb-3">
                                                     <label class="fw-medium form-label  fs-16" for="subject">Тема</label>
-                                                    <input type="text" class="form-control" placeholder="Ваша тема" id="subject" />
+                                                    <input type="text" name="form_subject" class="form-control" placeholder="Ваша тема" id="subject" />
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-md-6 mb-3">
                                                     <label class="fw-medium form-label  fs-16" for="number">Номер</label>
-                                                    <input type="text" class="form-control" placeholder="+7 800 555 35 35" id="number" />
+                                                    <input type="text" name="phone" class="form-control" placeholder="+7 800 555 35 35" id="number" />
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-12 mb-3">
                                                     <label class="fw-medium form-label  fs-16" for="comments">Сообщение</label>
-                                                    <textarea class="form-control" id="comments" placeholder="Введите ваше сообщение..." rows="5"></textarea>
+                                                    <textarea class="form-control" name="content" id="comments" placeholder="Введите ваше сообщение..." rows="5"></textarea>
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-12">
@@ -772,6 +777,11 @@
                                             </div><!--end row-->
                                         </form><!-- end form -->
                                     </div><!-- end col -->
+
+                                    <!--<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                                    <script src="script.js"></script>
+
                                     <div class="col-md-4">
                                         <img src="images/personal/contact.svg" alt="" height="200" class=" mx-auto d-block mb-5">
                                         <div class="d-flex">
@@ -861,7 +871,7 @@
                                 <h6 class="text-footer mb-4 mt-sm-0 mt-4">Больше информации</h6>
                                 <ul class="list-unstyled footer-list">
                                     <!--<li><a href="#blogs">Блоги</a></li>-->
-                                    <li><a href="contact.html">Контакт</a></li>
+                                    <li><a href="contact.php">Контакт</a></li>
                                     <li><a href="#">Правила и условия</a></li>
                                 </ul>
                             </div><!-- end col -->

@@ -44,7 +44,7 @@
                             <a class="nav-link" href="services.html">Услуги</a>
                         </li><!--end nav-item-->                        
                         <li class="nav-item">
-                            <a class="nav-link active" href="resume.html">Резюме</a>
+                            <a class="nav-link" href="resume.html">Резюме</a>
                         </li><!--end nav-item-->
                         <!--<li class="nav-item">
                             <a class="nav-link" href="projects.html">Проекты</a>
@@ -54,7 +54,7 @@
                             <a class="nav-link" href="blogs.html">Блоги</a>
                         </li>--><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.php">Контакт</a>
+                            <a class="nav-link  active" href="contact.html">Контакт</a>
                         </li><!--end nav-item-->
                     </ul><!--end navbar-nav-->
                     <a href="contact.php" class="btn btn-sm nav-btn text-primary mb-4 mb-lg-0">Наймите меня! <i class="icon-xxs ms-1" data-feather="chevrons-right"></i></a>
@@ -68,7 +68,7 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center py-100">
                     <div class="col-lg-7 text-center py-5 text-center">
-                        <h5 class="head-title py-4" aria-label="Резюме"></h5>                        
+                        <h5 class="head-title py-4" aria-label="Контакт"></h5>                        
                     </div><!--end col-->                  
                 </div><!--end row-->             
             </div><!-- end container -->
@@ -84,112 +84,95 @@
 
         <!-- start resume -->
         <section class="section">
-            <div class="container">                
-                <div class="row justify-content-center mb-4">
-                    <div class="col-12 col-md-10 col-lg-7 text-center">
-                    </div><!--end col-->
-                </div><!--end row-->
+            <div class="container">     
                 <div class="row">
                     <div class="col-12">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="main-timeline">
-                                    <div class="timeline">
-                                        <a href="https://mospolytech.ru/obuchauschimsya/proektnaya-deyatelnost/" class="timeline-content">
-                                            <div class="timeline-icon">
-                                                <i class="ti ti-users"></i>
+                        <div class="card bg-white"  style="background: url(images/personal/testi-pet.png); background-repeat: no-repeat; background-size: 15%; background-position: right bottom;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="fs-2 fw-normal lh-1 text-dark mb-3">Выходите на связь!</h2>
+                                        <p class="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 ">Всегда доступен для фриланса, если появится подходящий проект,<br>
+                                            не стесняйтесь обращаться ко мне.</p>
+                                        <form method="post" name="myForm">
+                                            <span id="error-msg"></span>
+                                            <div class="row">
+
+                                                <!-- Hidden Required Fields -->
+		                                        <input type="hidden" name="project_name" value="HLEBIK">
+		                                        <!--<input type="hidden" name="admin_email" value="dea16367@cdfaq.com">-->
+
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="fw-medium form-label fs-16" for="name">Имя</label>
+                                                    <input type="text" name="fio" class="form-control" placeholder="Ваше имя" id="name" />
+                                                </div>
+                                                <!-- end col -->
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="fw-medium form-label  fs-16" for="email" >Почта</label>
+                                                    <input type="email" name="email" class="form-control" placeholder="Ваша почта" id="email" value="<?=isset($_POST['email'])?$_POST['email']:''?>"/>
+                                                </div>
+                                                <!-- end col -->
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="fw-medium form-label  fs-16" for="subject">Тема</label>
+                                                    <input type="text" name="form_subject" class="form-control" placeholder="Ваша тема" id="subject" />
+                                                </div>
+                                                <!-- end col -->
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="fw-medium form-label  fs-16" for="number">Номер</label>
+                                                    <input type="text" name="phone" class="form-control" placeholder="+7 800 555 35 35" id="number" />
+                                                </div>
+                                                <!-- end col -->
+                                                <div class="col-12 mb-3">
+                                                    <label class="fw-medium form-label  fs-16" for="comments">Сообщение</label>
+                                                    <textarea class="form-control" name="content" id="comments" placeholder="Введите ваше сообщение..." rows="5"></textarea>
+                                                </div>
+                                                <!-- end col -->
+                                                <div class="col-12">
+                                                    <input type="submit" id="submit" name="send" class="btn btn-primary mt-2" value="Отправить сообщение" />
+                                                </div>
+                                                <!-- end col -->
+                                            </div><!--end row-->
+                                        </form><!-- end form -->
+                                    </div><!-- end col -->
+
+                                    <!--<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                                    <script src="script.js"></script>
+
+                                    <div class="col-md-4">
+                                        <img src="images/personal/contact.svg" alt="" height="200" class=" mx-auto d-block mb-5">
+                                        <div class="d-flex">
+                                            <div class="bg-light d-flex justify-content-center align-items-center thumb-lg  rounded">
+                                                <i class="ti ti-phone fs-22"></i>
                                             </div>
-                                            <div class="inner-content">
-                                                <h3 class="title">Проектная деятельность</h3>
-                                                <p class="description">
-                                                    Развитие коммандной работы, в результате которой делаются сайты, устраиваются соревнования и мероприятия.
-                                                </p>
+                                            <div class="align-self-center ms-3">
+                                                <span class="d-block lh-1">+7 925 150 57 95</span>
+                                                <span class="text-muted fs-14 mt-n2">с 9:00 по 19:00 по Москве</span>
                                             </div>
-                                            <div class="timeline-year"><span>2021-NOW</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="timeline">
-                                        <a href="https://mospolytech.ru/" class="timeline-content">
-                                            <div class="timeline-icon">
-                                                <i class="ti ti-school"></i>
+                                        </div>
+                                        <hr class="hr-dashed my-3">
+                                        <div class="d-flex">
+                                            <div class="bg-light d-flex justify-content-center align-items-center thumb-lg  rounded">
+                                                <i class="ti ti-mail fs-22"></i>
                                             </div>
-                                            <div class="inner-content">
-                                                <h3 class="title">Высшее Учебное Заведение</h3>
-                                                <p class="description">
-                                                    Московский политехнический университет является крупнейшей государственной образовательной организацией, готовящей кадры массовых профессий индустрии будущего                                                </p>
+                                            <div class="align-self-center ms-3">
+                                                <span class="d-block lh-1">glebanazarenko@gmail.com</span>
+                                                <span class="text-muted fs-14 mt-n2">С понедельника до субботы</span>
                                             </div>
-                                            <div class="timeline-year"><span>2021-NOW</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="timeline">
-                                        <a href="https://allpowerlifting.com/lifters/RUS/nazarenko-gleb-175171/" class="timeline-content">
-                                            <div class="timeline-icon">
-                                                <i class="ti ti-trophy"></i>
-                                            </div>
-                                            <div class="inner-content">
-                                                <h3 class="title">Чемпионство</h3>
-                                                <p class="description">
-                                                    Участвую в соревнованиях по паверлифтингу, где уже успел стать Многократным Чемпионом Европы и Мира. В данных момент перерыв во имя учебы.
-                                                </p>
-                                            </div>
-                                            <div class="timeline-year"><span>2018-2019</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="timeline">
-                                        <a href="http://lycee6.ru/" class="timeline-content">
-                                            <div class="timeline-icon">
-                                                <i class="ti ti-building"></i>
-                                            </div>
-                                            <div class="inner-content">
-                                                <h3 class="title">Школа</h3>
-                                                <p class="description">
-                                                    Закончил 11 классов в МБОУ лицее № 6 имени академика Г. Н. Флёрова в профильном классе Информатики и Физики.                                                 
-                                                </p>
-                                            </div>
-                                            <div class="timeline-year"><span>2010-2021</span></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div><!-- end col -->                                                       
-                        </div><!-- end row -->
-                        
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!-- end row -->  
+                            </div><!--end card-body-->
+                        </div><!--end card-->
                     </div><!-- end col -->
                 </div><!-- end row -->
             </div><!-- end container -->
         </section>
         <!-- end resume -->
-        
-        
-        <div class="position-relative"> 
-            <div class="shape overflow-hidden text-light"> 
-                <svg viewBox="0 0 2880 150" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M110 105L2160 0H2880V150H0V105H110Z" fill="currentColor"></path> </svg>
-            </div>
-        </div>
-        
-        
-        <section class="section bg-light cta-pettern">
-            <div class="container">            
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="pattern-1 position-absolute">
-                            <img src="images/p-1.svg" alt="" class="" height="80">
-                        </div>
-                        <h2 class="text-dark" style="line-height: 1.5; position: relative;">Свободен Для Работы Онлайн</h2>
-                        <p class="text-muted mb-0">Но так же возможна работа в офисе по договоренности</p>
-                    </div><!--end col--> 
-                    <div class="col-lg-6 ml-auto">
-                        <div class="cta-search" >
-                            <form method="POST" class="position-relative" action="contact.php">
-                                <input type="email" name="email" placeholder="Адрес почты" required="">
-                                <button type="submit" class="btn btn-dark" >Отправить сообщение</button>
-                            </form>
-                        </div>
-                    </div><!--end col--> 
-                </div><!--end row--> 
-            </div><!--end container--> 
-        </section>
 
-
+        
+        
+        
         <div class="position-relative">
             <div class="shape overflow-hidden bg-footer">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -228,7 +211,8 @@
                                 <ul class="list-unstyled footer-list">
                                     <li><a href="index.html">Домашняя</a></li>
                                     <li><a href="about.html">Обо мне</a></li>
-                                    <!--<li><a href="services.html">Серверы</a></li>-->                                       
+                                    <!--<li><a href="services.html">Серверы</a></li>-->         
+                                    
                                 </ul>
                             </div><!-- end col -->
                             <div class="col-md-4">
@@ -236,8 +220,8 @@
                                 <ul class="list-unstyled footer-list">
                                     <li><a href="resume.html">Резюме</a></li>
                                     <!--<li><a href="#review">Отзывы</a></li>-->
-                                    <!--<li><a href="projects.html">Проекты</a></li>   -->
-                                    <li><a href="services.html">Услуги</a></li>                                 
+                                    <!--<li><a href="projects.html">Проекты</a></li>         -->     
+                                    <li><a href="services.html">Услуги</a></li>                      
                                     
                                 </ul>
                             </div><!-- end col -->
