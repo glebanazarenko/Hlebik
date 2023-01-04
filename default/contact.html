@@ -93,32 +93,37 @@
                                         <h2 class="fs-2 fw-normal lh-1 text-dark mb-3">Выходите на связь!</h2>
                                         <p class="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 ">Всегда доступен для фриланса, если появится подходящий проект,<br>
                                             не стесняйтесь обращаться ко мне.</p>
-                                        <form method="post" name="myForm" onsubmit="return validateForm()">
+                                        <form method="post" name="myForm">
                                             <span id="error-msg"></span>
                                             <div class="row">
+
+                                                <!-- Hidden Required Fields -->
+		                                        <input type="hidden" name="project_name" value="HLEBIK">
+		                                        <!--<input type="hidden" name="admin_email" value="dea16367@cdfaq.com">-->
+
                                                 <div class="col-md-6 mb-3">
                                                     <label class="fw-medium form-label fs-16" for="name">Имя</label>
-                                                    <input type="text" class="form-control" placeholder="Ваше имя" id="name" />
+                                                    <input type="text" name="fio" class="form-control" placeholder="Ваше имя" id="name" />
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-md-6 mb-3">
-                                                    <label class="fw-medium form-label  fs-16" for="email">Почта</label>
-                                                    <input type="email" class="form-control" placeholder="Ваша почта" id="email" />
+                                                    <label class="fw-medium form-label  fs-16" for="email" >Почта</label>
+                                                    <input type="email" name="email" class="form-control" placeholder="Ваша почта" id="email" />
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-md-6 mb-3">
                                                     <label class="fw-medium form-label  fs-16" for="subject">Тема</label>
-                                                    <input type="text" class="form-control" placeholder="Ваша тема" id="subject" />
+                                                    <input type="text" name="form_subject" class="form-control" placeholder="Ваша тема" id="subject" />
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-md-6 mb-3">
                                                     <label class="fw-medium form-label  fs-16" for="number">Номер</label>
-                                                    <input type="text" class="form-control" placeholder="+7 800 555 35 35" id="number" />
+                                                    <input type="text" name="phone" class="form-control" placeholder="+7 800 555 35 35" id="number" />
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-12 mb-3">
                                                     <label class="fw-medium form-label  fs-16" for="comments">Сообщение</label>
-                                                    <textarea class="form-control" id="comments" placeholder="Введите ваше сообщение..." rows="5"></textarea>
+                                                    <textarea class="form-control" name="content" id="comments" placeholder="Введите ваше сообщение..." rows="5"></textarea>
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-12">
@@ -128,6 +133,11 @@
                                             </div><!--end row-->
                                         </form><!-- end form -->
                                     </div><!-- end col -->
+
+                                    <!--<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                                    <script src="script.js"></script>
+
                                     <div class="col-md-4">
                                         <img src="images/personal/contact.svg" alt="" height="200" class=" mx-auto d-block mb-5">
                                         <div class="d-flex">
