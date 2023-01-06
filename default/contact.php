@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Selfown - Responsive Personal page</title>
+        <title>HLEBIK</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Premium Bootstrap 5 Template" />
         <meta name="keywords" content="bootstrap 5, premium, marketing, multipurpose" />
@@ -103,8 +103,8 @@
 		                                        <!--<input type="hidden" name="admin_email" value="dea16367@cdfaq.com">-->
 
                                                 <div class="col-md-6 mb-3">
-                                                    <label class="fw-medium form-label fs-16" for="name">Имя</label>
-                                                    <input type="text" name="fio" class="form-control" placeholder="Ваше имя" id="name" />
+                                                    <label class="fw-medium form-label fs-16" for="name">ФИО</label>
+                                                    <input type="text" name="fio" class="form-control" placeholder="Ваше ФИО" id="name" />
                                                 </div>
                                                 <!-- end col -->
                                                 <div class="col-md-6 mb-3">
@@ -230,7 +230,7 @@
                                 <ul class="list-unstyled footer-list">
                                     <!--<li><a href="#blogs">Блоги</a></li>-->
                                     <li><a href="contact.php">Контакт</a></li>
-                                    <li><a href="#">Правила и условия</a></li>
+                                    <!--<li><a href="#">Правила и условия</a></li>-->
                                 </ul>
                             </div><!-- end col -->
                         </div><!-- end row -->
@@ -252,7 +252,7 @@
                     </div>
                     <div class="col-sm-6 text-sm-end">
                         <ul class="list-inline mb-0">
-                            <li class="list-inline-item"><a href="#">- Правила и условия<sup class="text-danger">*</sup></a></li>
+                            <li class="list-inline-item"><a href="#">Наверх<sup class="text-danger">*</sup></a></li>
                         </ul>
                     </div>
                 </div>
